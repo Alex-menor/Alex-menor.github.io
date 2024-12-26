@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" media="print" href="print.css">
+  <link rel="stylesheet" media="screen" href="screen.css">
+  <link rel="stylesheet" media="screen and (min-width: 480px)" href="example1.css">
+  <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: rgb(8, 8, 8);
+    }
+
+    .container {
+      margin: 0 auto;
+
+    }
+
+    .card {
+      position: relative;
+      width: 350px;
+      height: 405px;
+      margin: 0 auto;
+      background: rgb(126, 112, 92);
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(12, 12, 12, 0.5);
+      border: 1px solid rgb(68, 54, 35);
+    }
+
+    .face {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .face.back {
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .face.back b {
+      margin: 0;
+      padding: 0;
+    }
+
+    .face.back .desc {
+      background-color: black;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+
+    }
+
+    .face.front {
+      transition: 3s;
+
+    }
+
+    .face.front b {
+
+      margin: 0;
+      padding: 0;
+      font-size: 5.1em;
+      color: #fff;
+      transition: 0.5s;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    .card:hover .face.front {
+      height: 30px;
+    }
+
+    .card:hover .face.front b {
+      font-size: 30px;
+
+    }
+
+    .face.front {
+      background-image: url(img/heart-wood-crochet-valentine-s-day-wallpaper-1.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    .mag p {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 70;
+    }
+
+    @keyframes example {
+      0% {
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        left: 510px;
+        top: 0px;
+      }
+
+      50% {
+        left: 510px;
+        top: 510px;
+      }
+
+      75% {
+        left: 0px;
+        top: 510px;
+      }
+
+      100% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+
+    @media only screen and (max-width: 425px) {
+      .card {
+        width: 370px;
+        height: 440px;
+        font-size: 14px;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 320px) {
+      .card {
+        width: 300px;
+        height: 440px;
+        font-size: 14px;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 375px) {
+      .card {
+        width: 300px;
+        height: 440px;
+        font-size: 14px;
+      }
+
+
+    }
+  </style>
+  <div class="container">
+    <br><br>
+    <div class="card">
+      <div class="face back">
+        <div class="content">
+          <span class="stars"></span>
+          <b class="desc"></b>
+          <p class="desc">
+            En el fulgor de tu mirada, encuentro el reflejo de un universo infinito de pasión. Cada destello que emana
+            de tus ojos es como una llama que enciende la chispa del deseo en lo más profundo de mi ser, haciéndome
+            temblar con cada centelleo.
+            Tu mirada, tan penetrante y profunda, es un abismo de emociones que me sumerge en un torbellino de
+            sensaciones indescriptibles. En ella encuentro la luz que disipa las sombras de mi existencia, iluminando
+            cada rincón oscuro de mi ser con su resplandor.
+            Y cuando tu hermosa dentadura se asoma entre tus labios, es como si el mismísimo universo conspirara para
+            regalarme un destello de su esplendor. Cada sonrisa tuya es un bálsamo que calma mis temores, un remanso de
+            paz que me envuelve en su cálido abrazo.
+        </div>
+      </div>
+      <div class="face front">
+        <b></b>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
