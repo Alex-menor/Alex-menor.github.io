@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Es importante colocar la redirección en un setTimeout por si el alert necesita tiempo para mostrarse.
                 setTimeout(function() {
-                    window.location.href = 'main.php'; // Redirigir a la página principal después de 2 segundos
+                    window.location.href = 'https://alex-menor.github.io/main.php'; // Redirigir a la página principal después de 2 segundos
                 }, 2000); // Puedes ajustar el tiempo según sea necesario
             </script>
         </body>
