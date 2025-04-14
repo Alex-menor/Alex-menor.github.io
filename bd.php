@@ -1,7 +1,7 @@
 <?php
 $host = "https://alex-menor.github.io"; // o el host de tu base de datos
 $dbname = "nuevaeradb"; // cambia esto
-$username = "root"; // o tu usuario de la BD
+$username = ""; // o tu usuario de la BD
 $password = ""; // tu contraseña
 
 try {
